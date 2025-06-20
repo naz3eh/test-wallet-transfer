@@ -12,7 +12,8 @@
     "test": "run-s test:*",
     "test:forc": "forc test --path ./sway-programs",
     "test:e2e": "vitest",
-    "test:ui": "sh ./test/ui/test-ui.sh"
+    "test:ui": "sh ./test/ui/test-ui.sh",
+    "transfer": "ts-node --loader ts-node/esm ./src/transfer.ts"
   },
   "dependencies": {
     "@fuels/connectors": "0.39.2",
@@ -40,6 +41,8 @@
     "globals": "16.0.0",
     "postcss": "8.5.3",
     "tailwindcss": "4.0.8",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
     "typescript": "5.7.3",
     "typescript-eslint": "8.23.0",
     "vite": "6.1.6",
